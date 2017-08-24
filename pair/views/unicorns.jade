@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+  - for unicorn in unicorns
+    a(href="/unicorns/#{unicorn.id}")
+      li= unicorn.name
+
+  br
+  form(method='get' action='/unicorns/new')
+    button(type='submit') create new pony with horn!

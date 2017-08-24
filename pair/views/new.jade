@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Create New Unicorn Below
+  form(method="post" action="/unicorns")
+    input(type='text' name='name' placeholder='name')
+    br
+    input(type='text' name='color' placeholder='color')
+    br
+    input(type='')
+    p bronie
+      input(type="checkbox" checked=true name="bronie")
+    br
+    button(type='submit' value='submit') submit
